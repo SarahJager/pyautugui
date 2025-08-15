@@ -68,7 +68,7 @@ for i in range(7):
 
 print("\nBat dau mo phong nguoi dung trong 250 giay...")
 start_time = time.time()
-duration = 120
+duration = 250
 
 while time.time() - start_time < duration:
     screen_width, screen_height = pyautogui.size()
@@ -98,4 +98,5 @@ for w in tabs:
 
 
 print("Hoan tat tat ca.")
+
 
