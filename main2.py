@@ -15,7 +15,7 @@ def get_chrome_windows():
     return [w for w in gw.getWindowsWithTitle('Chrome') if w.visible and w.title.strip() != ""]
 
 # 1. Mở Chrome với link và kích thước cố định
-old_url = "https://raw.githubusercontent.com/anisidina29/anisidina29-selenium_earnvids_docker/refs/heads/main/earnvids_link2.txt"
+old_url = "https://raw.githubusercontent.com/anisidina29/voe.sx/refs/heads/main/voes_link.txt"
 response_old = requests.get(old_url)
 response_old.raise_for_status()
 links = response_old.text.strip().splitlines()
@@ -95,5 +95,6 @@ for w in tabs:
     time.sleep(0.5)
     pyautogui.hotkey('ctrl', 'w')
     time.sleep(0.5)
+
 
 print("Hoan tat tat ca.")
