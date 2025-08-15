@@ -30,7 +30,7 @@ subprocess.Popen(["start", "chrome", "--new-window", url, "--window-size=1280,72
 time.sleep(6)
 
 # 3. Click nút Play hoặc giữa màn hình
-for i in range(25):
+for i in range(7):
     print(f"\nLap lan {i+1}/10")
     try:
         location = pyautogui.locateOnScreen("play.png", confidence=0.8)
@@ -68,7 +68,7 @@ for i in range(25):
 
 print("\nBat dau mo phong nguoi dung trong 250 giay...")
 start_time = time.time()
-duration = 250
+duration = 120
 
 while time.time() - start_time < duration:
     screen_width, screen_height = pyautogui.size()
@@ -98,3 +98,4 @@ for w in tabs:
 
 
 print("Hoan tat tat ca.")
+
